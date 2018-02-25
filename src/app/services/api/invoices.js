@@ -14,9 +14,13 @@ export default class InvoicesApi extends BaseApi {
         return await this.backend.db.invoices.remove(id);
     }
     async update(invoice) {
-        return await this.backend.db.invoices.update(invoice);
+        return await this.withPreventingRaceCondition('updateInvoice', () => {
+            return this.backend.db.invoices.update(invoice);
+        });
     }
     async searchUserInvoices(userId, name) {
-        return await this.backend.db.invoices.searchUserInvoices(userId, name);
+        return await this.withPreventingRaceCondition('searchInvoices', () => {
+            return this.backend.db.invoices.searchUserInvoices(userId, name);
+        });
     }
 }
