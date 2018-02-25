@@ -1,0 +1,21 @@
+.invoices-page {
+  padding-top: 10px; }
+  .invoices-page_search {
+    display: flex; }
+    .invoices-page_search input {
+      flex-grow: 3;
+      padding: 5px; }
+    .invoices-page_search button {
+      flex-grow: 1;
+      background: deepskyblue;
+      border: 1px solid black;
+      padding: 5px; }
+  .invoices-page_item {
+    border: 1px solid black;
+    margin: 2px;
+    display: flex; }
+    .invoices-page_item input {
+      flex-grow: 3;
+      padding: 5px; }
+    .invoices-page_item button {
+      flex-grow: 1; }

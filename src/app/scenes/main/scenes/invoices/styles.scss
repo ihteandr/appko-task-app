@@ -1,0 +1,28 @@
+.invoices-page {
+  padding-top: 10px;
+  &_search {
+    display: flex;
+    input {
+      flex-grow: 3;
+      padding: 5px;
+    }
+    button {
+      flex-grow: 1;
+      background: deepskyblue;
+      border: 1px solid black;
+      padding: 5px;
+    }
+  }
+  &_item {
+    border: 1px solid black;
+    margin: 2px;
+    display: flex;
+    input {
+      flex-grow: 3;
+      padding: 5px;
+    }
+    button {
+      flex-grow: 1;
+    }
+  }
+}

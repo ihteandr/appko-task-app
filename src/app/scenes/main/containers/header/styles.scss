@@ -1,0 +1,20 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .logout {
+    cursor: pointer;
+    color: blue;
+  }
+  b{
+    position: absolute;
+    left: 19px;
+  }
+  label {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

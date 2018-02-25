@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .page-header .logout {
+    cursor: pointer;
+    color: blue; }
+  .page-header b {
+    position: absolute;
+    left: 19px; }
+  .page-header label {
+    display: inline-block;
+    margin: 0 5px; }

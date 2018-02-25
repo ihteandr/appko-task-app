@@ -1,0 +1,25 @@
+body, html, #root, .root_container {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0; }
+
+body * {
+  box-sizing: border-box; }
+
+.ap.page {
+  height: calc(100% - 50px); }
+  .ap.page .ap.content {
+    height: 100%;
+    width: 500px;
+    margin: auto; }
+
+input.ap.error {
+  border: 1px solid red; }
+
+.ap.error {
+  color: red; }
+
+.ap.btn-link {
+  border: none;
+  color: black;
+  cursor: pointer; }
